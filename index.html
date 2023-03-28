@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <title>Julio Souto Examen Javascript</title>
+  <style>
+    .container{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 2em;
+    }
+  </style>
+</head>
+<body>
+    <h1>Examen Javascript</h1>
+
+    <div class="container">
+      <div class="ejercicio1">
+        <h2>Ejercicio 1</h2>
+        <form action="#" id="motor-form">
+          <label for="motor">Tipo de motor</label>
+          <input type="number" name="motor" id="motor">
+          <button id="motor-submit">Enviar</button>
+        </form>
+        <p id="motor-result"></p>
+      </div>
+
+      <div class="ejercicio2">
+        <h2>Ejercicio 2</h2>
+        <form action="#" id="impar-form">
+          <label for="impar">Numero impar</label>
+          <input type="number" name="impar" id="impar">
+          <button id="impar-submit">Enviar</button>
+        </form>
+        <p id="impar-result"></p>
+      </div>
+
+      <div class="ejercicio4">
+        <h2>Ejercicio 4</h2>
+        <form action="#" id="area-form">
+          <div>
+            <label for="base">Base</label>
+            <input type="number" name="base" id="base" step=".01">
+          </div>
+          <div>
+            <label for="altura">Altura</label>
+            <input type="number" name="altura" id="altura" step=".01">
+          </div>
+          <button>Calcular Area</button>
+        </form>
+        <p id="result-area"></p>
+      </div>
+
+      <div class="ejercicio5">
+        <h2>Ejercicio 5</h2>
+        <form action="#" id="array-form">
+          <label for="array">Numeros array</label>
+          <input type="number" name="array" id="array" step=".01">
+          <button id="array-load">Cargar</button>
+        </form>
+        <button id="array-submit">Enviar</button>
+        <p id="array-result"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
